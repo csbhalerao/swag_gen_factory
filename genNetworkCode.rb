@@ -12,7 +12,7 @@ class KotlinCodeGenerator
   def exec
     return '' if api_details.nil? || api_details.empty?
     file = FileGenerator.new.exec
-    content = ''
+    content = "------------------------------------------------------------------------------\n https://github.com/csbhalerao/swag_gen_factory \n ------------------------------------------------------------------------------------ \n"
     api_details.map do |detail|
       contents = EndpointBuilderService.new(detail).exec
       content += "\n//------------------------------ #{detail[:url]} ----------------------------------------\n\n"
