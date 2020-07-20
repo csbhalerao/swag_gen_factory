@@ -22,7 +22,7 @@ If ruby is not installed you can refer here for installation process https://www
 1. Download this script. 
 2. Get the openapi.json from swagger editor 
 3. Then just execute following script
-```ruby genNetworkCode.rb openapi.json```
+```ruby gen_network_code.rb openapi.json```
 4. After successful execution of script you will get NetworkApi.kt with request, response and retrofit interface.
 
 Please let me know the feedback or raise the issues here.
