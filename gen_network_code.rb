@@ -1,4 +1,5 @@
 require 'json'
+require 'active_support'
 require 'active_support/core_ext'
 
 class KotlinCodeGenerator
@@ -374,6 +375,7 @@ class SwaggerConvertor
   end
 
   def parse_req_res_schema(data)
+    return {} if data['content'].nil?
     data['content']['application/json']['schema']
   end
 
